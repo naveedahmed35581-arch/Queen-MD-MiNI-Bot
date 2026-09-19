@@ -1,0 +1,22 @@
+{
+  "name": "GHOST-TECH",
+  "description": "Javascript WhatsApp bot made by GHOST TECH",
+  "logo": "https://i.ibb.co/h5cTyZS/5648bfbaf801.jpg",
+  "keywords": ["GHOST-TECH"],
+  "success_url": "/",
+  "stack": "container",
+  
+  "env": {
+    "MONGODB_URL": {
+      "description": "MongoDB connection string for database storage",
+      "required": false
+    }
+  },
+
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+    }
+  ],
+  "stack": "heroku-24"
+}
