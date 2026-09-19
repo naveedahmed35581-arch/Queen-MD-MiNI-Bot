@@ -1,74 +1,30 @@
-const fs = require('fs');
-const dotenv = require('dotenv');
-
-if (fs.existsSync('.env')) {
-    dotenv.config({ path: '.env' });
-}
-
 module.exports = {
-    SESSION_ID: process.env.SESSION_ID || "MINI BOT", 
-    MONGODB_URI: process.env.MONGODB_URI || 'mongodb+srv://offarslan_db_user:arslanmd@cluster0.xrqkzwg.mongodb.net/?appName=Cluster0',
-    
-    PREFIX: process.env.PREFIX || '.',
-    OWNER_NUMBER: process.env.OWNER_NUMBER || '923131613251',
-    BOT_NAME: "𝐆ʜᴏsᴛ 𝐗ᴅ",
-    OWNER_NAME: 'ᴀᴅᴇᴇʟ-x-ǫᴀᴅᴇᴇʀ',
-    IK_IMAGE_PATH: './lib/qadeer.jpg',
-    BOT_FOOTER: '© ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴀᴅᴇᴇʟ-x-ǫᴀᴅᴇᴇʀ',
-    
-    WORK_TYPE: process.env.WORK_TYPE || "public", 
-    
-    AUTO_VIEW_STATUS: process.env.AUTO_VIEW_STATUS || 'true',
-    AUTO_LIKE_STATUS: process.env.AUTO_LIKE_STATUS || 'true',
-    AUTO_LIKE_EMOJI: ['❤️', '🌹', '😇', '💥', '🔥', '💫', '💎', '💙', '🌝', '💚'], 
-    
-    AUTO_STATUS_REPLY: process.env.AUTO_STATUS_REPLY || 'false',
-    AUTO_STATUS_MSG: process.env.AUTO_STATUS_MSG || 'Nice status! 🔥',
-    
-    READ_MESSAGE: process.env.READ_MESSAGE || 'false',
-    AUTO_TYPING: process.env.AUTO_TYPING || 'false',
-    AUTO_RECORDING: process.env.AUTO_RECORDING || 'false',
-    
-    WELCOME_ENABLE: process.env.WELCOME_ENABLE || 'true',
-    GOODBYE_ENABLE: process.env.GOODBYE_ENABLE || 'true',
-    WELCOME_MSG: process.env.WELCOME_MSG || null, 
-    GOODBYE_MSG: process.env.GOODBYE_MSG || null, 
-    WELCOME_IMAGE: process.env.WELCOME_IMAGE || null, 
-    GOODBYE_IMAGE: process.env.GOODBYE_IMAGE || null,
-    ADMIN_ACTION: process.env.ADMIN_ACTION || 'false',
-    
-    GROUP_INVITE_LINK: process.env.GROUP_INVITE_LINK || 'https://chat.whatsapp.com/J0Nw0Q7Qtz2GLfcPb6x5rO?s=cl&p=a&mlu=0&ilr=0&amv=0',
-    
-    ANTI_CALL: process.env.ANTI_CALL || 'false',
-    REJECT_MSG: process.env.REJECT_MSG || '*📞 Call rejected automatically. No calls allowed.*',
-    
-    IMAGE_PATH: 'https://i.ibb.co/MkjB1bG9/MAFIA-ADEEL.jpg',
-    CHANNEL_LINK: 'https://whatsapp.com/channel/0029VbAkAEhCRs1g8MmyEJ2K',
-    
-    ANTI_DEL_PATH: process.env.ANTI_DEL_PATH || 'same',
-    
-    NEWSLETTER_JIDS: process.env.NEWSLETTER_JIDS
-    ? process.env.NEWSLETTER_JIDS.split(',').map(j => j.trim())
-    : [
-        '120363418906972955@newsletter',
-     //   '120363412345678901@newsletter',
-     //   '120363423456789012@newsletter',
-        '120363428297971144@newsletter'
-    ],
-
-    // ✅ NEW: AUTOREACT — global defaults (per-number override lives in MongoDB userConfig)
-    AUTO_REACT: process.env.AUTO_REACT || 'false',
-    AUTO_REACT_EMOJIS: [], // per-number custom pool override, saved via .autoreactset
-    AUTO_REACT_DEFAULT_EMOJIS: [
-        '😀','😁','😂','🤣','😊','😍','🥰','😘','😎','🤩','🥳','😇','🙃','😉','😌',
-        '🤗','🤔','😏','😴','🤤','😜','🤪','🥴','😱','😭','😤','😡','🤯','🥶','🥵',
-        '😷','🤒','👻','💀','👽','🤖','🎃','😺','💯','🔥','✨','⭐','🌟','💫','🌈',
-        '☀️','🌙','⚡','💥','🎉','🎊','🎁','🏆','🥇','❤️','🧡','💛','💚','💙','💜',
-        '🖤','🤍','🤎','💔','❣️','💕','💞','💓','💗','💖','💘','💝','👍','👎','👏',
-        '🙌','🤝','🙏','💪','✌️','🤞','👌','🤙','🎯','🚀','🌸','🌹','🌺','🍀','🍎',
-        '🍕','🍔','☕','🍺','⚽','🏀','🎮','🎧','📸','🎬'
-    ],
-    
-    TELEGRAM_BOT_TOKEN: process.env.TELEGRAM_BOT_TOKEN || '7214172448:AAHGqSgaw-zGVPZWvl8msDOVDhln-9kExas',
-    TELEGRAM_CHAT_ID: process.env.TELEGRAM_CHAT_ID || '7825445776'
-};
+  botName: "Mano Queen Mini Bot",
+  botFullName: "MANO QUEEN MINI BOT",
+  ownerName: "Mano queen",
+  ownerNumber: "923213231887",
+  ownerNumbers: ["923213231887"],
+  ownerJid: "923213231887@s.whatsapp.net",
+  poweredBy: "queen mini bot",
+  footer: "© Powered by queen mini bot",
+  channelLink: "https://whatsapp.com/channel/0029VbAQ9uwLdQed2GwbY60a/3357",
+  channelLink2: "https://whatsapp.com/channel/0029VbAQ9uwLdQed2GwbY60a/3357",
+  channelMessageLink: "https://whatsapp.com/channel/0029VbAQ9uwLdQed2GwbY60a/3357",
+  newsletterJid: "120363420163227139@newsletter",
+  newsletterJid1: "120363420163227139@newsletter",
+  newsletterJid2: "120363420163227139@newsletter",
+  newsletterJid3: "120363420163227139@newsletter",
+  channelJid: "120363420163227139@newsletter",
+  botImage: "https://i.ibb.co/Zp9NrwPR/8ff3c4f8edcf.jpg",
+  menuImage: "https://i.ibb.co/Zp9NrwPR/8ff3c4f8edcf.jpg",
+  aliveImage: "https://i.ibb.co/Zp9NrwPR/8ff3c4f8edcf.jpg",
+  thumbnail: "https://i.ibb.co/Zp9NrwPR/8ff3c4f8edcf.jpg",
+  pairImage: "https://i.ibb.co/Zp9NrwPR/8ff3c4f8edcf.jpg",
+  menuImg: "https://i.ibb.co/Zp9NrwPR/8ff3c4f8edcf.jpg",
+  aliveImg: "https://i.ibb.co/Zp9NrwPR/8ff3c4f8edcf.jpg",
+  prefix: ".",
+  prefa: ["."],
+  worktype: "public",
+  mode: "public",
+  timezone: "Asia/Karachi"
+}

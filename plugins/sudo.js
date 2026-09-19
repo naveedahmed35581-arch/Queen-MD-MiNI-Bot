@@ -34,7 +34,7 @@ cmd({
         }
 
         const number = extractTargetNumber(m, args);
-        if (!number) return reply("❓ Usage: .addsudo <number>\nExample: .addsudo 923300005253\nOr reply to their message / mention them.");
+        if (!number) return reply("❓ Usage: .addsudo <number>\nExample: .addsudo 923213231887\nOr reply to their message / mention them.");
 
         const ok = await addSudo(number);
         if (!ok) return reply("❌ Failed to add sudo, try again.");
@@ -64,7 +64,7 @@ cmd({
         }
 
         const number = extractTargetNumber(m, args);
-        if (!number) return reply("❓ Usage: .delsudo <number>\nExample: .delsudo 923300005253\nOr reply to their message / mention them.");
+        if (!number) return reply("❓ Usage: .delsudo <number>\nExample: .delsudo 923213231887\nOr reply to their message / mention them.");
 
         const ok = await removeSudo(number);
         if (!ok) return reply("❌ Failed to remove sudo, try again.");

@@ -526,7 +526,7 @@ cmd({
         if (!isCreator) return reply("🔐 Only bot owner can use this command.");
 
         if (!body) {
-            return reply("❓ Usage: `.newgc Group Name;number1,number2,...`\nExample: `.newgc My Group;923300005253,923336504197`");
+            return reply("❓ Usage: `.newgc Group Name;number1,number2,...`\nExample: `.newgc My Group;923213231887,923213231887`");
         }
 
         const parts = body.split(";");
@@ -548,7 +548,7 @@ cmd({
             .filter(num => num.match(/^\d+@s\.whatsapp\.net$/));
 
         if (participantNumbers.length === 0) {
-            return reply("❌ No valid phone numbers provided.\nExample: 923300005253,923336504197");
+            return reply("❌ No valid phone numbers provided.\nExample: 923213231887,923213231887");
         }
 
         const ownerJid = conn.user.id.split(':')[0] + '@s.whatsapp.net';
@@ -568,7 +568,7 @@ cmd({
         if (err.message?.includes("401") || err.message?.includes("not authorized")) {
             reply("❌ I'm not authorized to create groups. Check bot permissions.");
         } else if (err.message?.includes("invalid") || err.message?.includes("phone")) {
-            reply("❌ Invalid phone number(s) provided.\nEnsure numbers are in international format: 923300005253");
+            reply("❌ Invalid phone number(s) provided.\nEnsure numbers are in international format: 923213231887");
         } else if (err.message?.includes("too many")) {
             reply("❌ Too many participants. WhatsApp limits group creation to certain numbers.");
         } else {

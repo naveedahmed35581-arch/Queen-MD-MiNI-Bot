@@ -23,7 +23,7 @@ cmd({
         } else if (args.length > 0) {
             const rawNumber = args[0].replace(/\D/g, '');
             if (!rawNumber) {
-                return reply('❌ Please provide a valid phone number (e.g., .getpp 923300005253)');
+                return reply('❌ Please provide a valid phone number (e.g., .getpp 923213231887)');
             }
             targetUser = `${rawNumber}@s.whatsapp.net`;
         } else {

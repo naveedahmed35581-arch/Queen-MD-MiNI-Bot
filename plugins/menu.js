@@ -153,7 +153,7 @@ ${menuSections}
             forwardingScore: 999,   
             isForwarded: true,   
             forwardedNewsletterMessageInfo: {   
-                newsletterJid: '120363418906972955@newsletter',   
+                newsletterJid: '120363365530973563@newsletter',   
                 newsletterName: BOT_NAME,   
                 serverMessageId: 143   
             }   
